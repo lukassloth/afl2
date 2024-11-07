@@ -1,0 +1,60 @@
+body {
+    width: 100%;
+    height: 100vh;
+    /* har brugt følgende kode for at for de to farver til at fade sammen */
+    background: linear-gradient(90deg, #13889f, #b4e0ea);
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+h1 { /* Overskriften i toppen */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #f1f1f2;
+    text-align: center; /* for at få teksten centreret på siden */
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* giver skygge til overskriften */
+}
+
+#box { /* overordnet div med flex for at de to andre div er side om siden */
+    display: flex; 
+}
+
+#content { /* Div med fakta om album etc. */
+    font-size: 20px;
+    line-height: 1.8;
+    color: #f1f1f2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#tracklist { /* Div med tracklist */
+    background-color: #13889f;
+    text-align: center; /* for at teksten står i midten af Div */
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+    margin-left: 80px; /* for at tilpasse afstanden til den anden div */
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f1f1f2;
+    overflow-y: auto; /* for at man kan scrolle ned i teksten */
+    border-radius: 20px; /* for at runde kanterne på boxen af */
+    line-height: 1.8;
+}
+
+.tracklist-button { /* knappen der skal sende info over i tracklist div */
+    font-size: 19px;
+    cursor: pointer; /* her skifter musen til en hånd når man er over knappen */
+    border: none;
+    background-color: #13889f;
+    color: #f1f1f2;
+    text-decoration: none;
+    border-radius: 40px; /* Bruges til at gøre knappen rund */
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+.tracklist-button:hover { /* Skifter farven på knappen når man hover over den */
+    background-color: #98c7d2;
+}
